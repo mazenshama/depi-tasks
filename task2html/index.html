@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic HTML Showcase</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background: #fafafa;
+        }
+        header, footer, section, article, nav, aside {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        mark {
+            background: yellow;
+            font-weight: bold;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #4a4aef;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h2, h3, h4 {
+            margin-top: 0;
+        }
+        ul, ol, dl {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #999;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        img {
+            display: block;
+            margin: 10px 0;
+            width: 100px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background: #4a4aef;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #2e2ecc;
+        }
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+        footer a {
+            color: #4a4aef;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Semantic HTML Showcase</h1>
+        <mark>This page is designed using semantic HTML5 tags.</mark>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+            <a href="#">Coming Soon</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Semantic HTML</h2>
+            <p>Semantic HTML introduces meaning to the web page rather than just presentation. For example, using <code>&lt;article&gt;</code> for articles and <code>&lt;nav&gt;</code> for navigation.</p>
+        </section>
+
+        <section>
+            <article>
+                <h3>Hyperlinks</h3>
+                <p>Visit <a href="https://www.w3schools.com">W3Schools.com</a> to learn HTML.</p>
+                <p><a href="#">Go to List Section</a></p>
+            </article>
+
+            <article>
+                <h3>Accessible Image</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Simple_star.svg" alt="Star badge">
+                <p>A basic DOM structure image</p>
+            </article>
+
+            <article>
+                <h3>Useful HTML Lists</h3>
+                <h4>Unordered List:</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <h4>Ordered List (type="A"):</h4>
+                <ol type="A">
+                    <li>Semantic Tags</li>
+                    <li>Forms</li>
+                    <li>Tables</li>
+                </ol>
+                <h4>Description List:</h4>
+                <dl>
+                    <dt>Coffee</dt>
+                    <dd>- Black hot drink</dd>
+                    <dt>Milk</dt>
+                    <dd>- White cold drink</dd>
+                </dl>
+            </article>
+
+            <article>
+                <h3>Table Example</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Semantic Tag</td>
+                            <td>Gives meaning to content</td>
+                        </tr>
+                        <tr>
+                            <td>Non-semantic Tag</td>
+                            <td>Only used for layout (&lt;div&gt;, &lt;span&gt;)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">More tags to be added soon...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h3>Quick Tip</h3>
+                <p>Always use the <code>alt</code> attribute in <code>&lt;img&gt;</code> for accessibility and SEO.</p>
+            </article>
+        </section>
+
+        <section>
+            <h3>Contact Us</h3>
+            <form>
+                <label>Name:</label>
+                <input type="text">
+                <label>Email:</label>
+                <input type="email">
+                <label>Message:</label>
+                <textarea></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Semantic Web Tutorial</p>
+        <p>Validate your code at <a href="https://validator.w3.org/">W3C Validator</a></p>
+    </footer>
+</body>
+</html>
