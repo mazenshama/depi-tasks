@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Assignment</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 10px;
+        }
+        fieldset {
+            background-color: #3d44b3;
+            margin-bottom: 20px;
+            padding: 20px;
+          border: none;
+            position: relative;
+        }
+        legend {
+            background-color: #e03838;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .inner-box {
+            background-color: #e03838;
+            padding: 20px;
+            position: relative;
+        }
+        p.title {
+            background-color: #061373;
+            color: white;
+            padding: 8px 20px;
+            width: fit-content;
+            margin: 0 0 15px 0;
+            font-weight: bold;
+        }
+        form{
+          background-color: #3d44b3;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+            color: #fff;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="tel"], input[type="email"], input[type="password"], select {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+        select[multiple], select[size] {
+            width: 220px;
+            height: 150px;
+        }
+        .submit-btn {
+            background-color: #e03838;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #c23030;
+        }
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Data</legend>
+            <div class="inner-box">
+                <p class="title">Your Name</p>
+                <label>First Name :</label>
+                <input type="text" placeholder="ex omar"><br>
+                <label>Last Name :</label>
+                <input type="text" placeholder="ex mokhtar"><br>
+            </div>
+          <br><br><br>
+        </fieldset>
+
+        <label>Your-Phone :</label>
+        <input type="tel"><br>
+
+        <label>Email :</label>
+        <input type="email"><br>
+
+        <label>Password :</label>
+        <input type="password"><br>
+
+        <label>Re-Password :</label>
+        <input type="password"><br>
+
+        <br><br><br>
+      <label>
+        <select>
+            <optgroup label="Egypt">
+                <option>Cairo</option>
+                <option>Alexandrea</option>
+                <option>Mansora</option>
+            </optgroup>
+            <optgroup label="UEA">
+                <option>Abu Dhabi</option>
+                <option>Ajman</option>
+                <option>Sharjah</option>
+            </optgroup>
+            <optgroup label="Saudi Arabia">
+                <option>Riyadh</option>
+                <option>Jaddah</option>
+                <option>Dammam</option>
+            </optgroup>
+        </select>
+      </label>
+        <br><br>
+        <button class="submit-btn">SUBMIT</button>
+    </form>
+</body>
+</html>
