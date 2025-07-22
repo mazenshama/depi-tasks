@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us & Our Team</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h2.section-title {
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 10px;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2.section-title::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 2px;
+      background: #333;
+      margin: 8px auto 0;
+      border-radius: 2px;
+    }
+
+    p.section-subtitle {
+      text-align: center;
+      color: #999;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      font-size: 1rem;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      width: 55%;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .skills {
+      width: 35%;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill-label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+      color: #222;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skill-bar-bg {
+      background: #eee;
+      border-radius: 10px;
+      height: 8px;
+      overflow: hidden;
+    }
+
+    .skill-bar-fill {
+      height: 8px;
+      border-radius: 10px;
+      background: #e74c3c;
+    }
+    .team {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .team-members {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .team-member {
+      flex: 1 1 22%;
+      max-width: 22%;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+    .team-member img {
+      width: 100%;
+      border-radius: 6px;
+      object-fit: cover;
+      height: 280px;
+      margin-bottom: 12px;
+    }
+
+    .team-member h4 {
+      margin: 0 0 6px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: #222;
+    }
+
+    .team-member p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #777;
+    }
+    .contact-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      max-width: 1100px;
+      margin: 0 auto 40px;
+    }
+
+    .contact-section p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #222;
+      margin: 0;
+    }
+
+    .contact-btn {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .contact-btn:hover {
+      background-color: #c0392b;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .about-content {
+        flex-direction: column;
+      }
+
+      .about-text,
+      .skills {
+        width: 100%;
+      }
+
+      .team-members {
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .team-member {
+        max-width: 100%;
+      }
+
+      .contact-section {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="container about-us">
+    <div class="about-header">
+      <h2 class="section-title">About Us</h2>
+      <p class="section-subtitle">
+        Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Pellentesque elementum libero enim.
+      </p>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Pellentesque vel elit egestas, pretium est ac, convallis orci. Vivamus sem nisl, tristique vel fringilla vitae, efficitur at eros. Duis aliquet aliquet pharetra. Suspendisse bibendum erat quis gravida pulvinar. Phasellus vel eros porta, blandit dui ac, viverra felis.
+        </p>
+        <p>
+          Nunc placerat iaculis pulvinar. Nullam auctor mauris sed urna posuere volutpat. Mauris ut dui sit amet elit fermentum fermentum. Fusce tincidunt diam at bibendum porta.
+        </p>
+        <p>
+          Aliquam nunc felis, sagittis eu purus non, interdum vehicula urna. Vivamus congue diam sapien, eu pellentesque ipsum ultricies quis.
+        </p>
+      </div>
+
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-label"><span>Branding</span><span>80%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-label"><span>Web Design</span><span>95%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:95%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-label"><span>Graphic Design</span><span>85%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-label"><span>Development</span><span>70%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:70%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container team">
+    <h2 class="section-title">Our Team</h2>
+    <p class="section-subtitle">
+      Vestibulum ante ipsum primis in faucibus orci. Morbi tincidunt urna imperdiet tincidunt rhoncus. Sed mollis ligula non massa aliquam faucibus.
+    </p>
+    <div class="team-members">
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Broad" />
+        <h4>Michael Broad</h4>
+        <p>Web Designer</p>
+      </div>
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jeannette Crow" />
+        <h4>Jeannette Crow</h4>
+        <p>CEO Founder</p>
+      </div>
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Martin Lawrence" />
+        <h4>Martin Lawrence</h4>
+        <p>App Developer</p>
+      </div>
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Isabella Dowson" />
+        <h4>Isabella Dowson</h4>
+        <p>Creative Director</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <p>Do you have any ideas?</p>
+    <a href="#" class="contact-btn">Contact Us</a>
+  </section>
+</body>
+</html>
