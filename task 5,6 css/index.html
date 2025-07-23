@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Business Tips</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #fff;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-style: italic;
+      font-weight: 600;
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-family: 'Great Vibes', cursive;
+      font-weight: 700;
+      font-size: 36px;
+      margin: 0 0 10px 0;
+      color: #222;
+    }
+
+    .diamond {
+      width: 14px;
+      height: 14px;
+      background-color: #00b8c6;
+      margin: 0 auto 40px auto;
+      transform: rotate(45deg);
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 4px;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 20px 20px 30px 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-meta {
+      font-style: italic;
+      font-size: 14px;
+      color: #00b8c6;
+      margin-bottom: 5px;
+    }
+
+    .card-meta span {
+      color: #666;
+      font-style: normal;
+      margin-left: 8px;
+      font-weight: 400;
+    }
+
+    .card-title {
+      font-family: 'Great Vibes', cursive;
+      font-weight: 700;
+      font-size: 20px;
+      margin: 10px 0 10px 0;
+      color: #222;
+      line-height: 1.2;
+    }
+
+    .card-description {
+      font-style: italic;
+      font-size: 14px;
+      color: #666;
+      flex-grow: 1;
+      line-height: 1.4;
+    }
+
+    .view-all-btn {
+      margin-top: 40px;
+      background-color: #00b8c6;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 30px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      transition: background-color 0.3s ease;
+    }
+
+    .view-all-btn:hover {
+      background-color: #009aa6;
+    }
+
+    @media (max-width: 980px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 90%;
+        max-width: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="subtitle">Browse Our</div>
+    <h2 class="title">Business Tips</h2>
+    <div class="diamond"></div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=600&q=80" alt="Planning" />
+        <div class="card-content">
+          <div class="card-meta"><em>07.05.2021</em><span>by admin</span></div>
+          <div class="card-title">How long before the exit you must be planning it?</div>
+          <div class="card-description">
+            The ideal timing for planning an exit strategy is at least 5-10 years beforehand. But unfortunately, that kind of diligent approach is not always applicable. So how does a CEO or an owner can perform a quicker exit?
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="IT Companies" />
+        <div class="card-content">
+          <div class="card-meta"><em>07.05.2021</em><span>by admin</span></div>
+          <div class="card-title">Is it viable now for IT companies to file an IPO?</div>
+          <div class="card-description">
+            It's no dotcom-bubble burst today as it was at the verge of the centuries. But still, with so many different trends receiving investment funding, is it wise for a company to file an IPO at this time in the stock's history.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="CFO Crisis" />
+        <div class="card-content">
+          <div class="card-meta"><em>07.05.2021</em><span>by admin</span></div>
+          <div class="card-title">Bringing a new CFO at the time of crisis?</div>
+          <div class="card-description">
+            There are many different approaches for saving a company during a period of a financial meltdown. Hiring a new Chief Financial Officer may seem like an obvious managerial solution from that list. But actually, is it the best decision?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="view-all-btn">View All</button>
+  </div>
+</body>
+</html>
