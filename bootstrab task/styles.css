@@ -1,0 +1,39 @@
+
+    body { font-family: Arial, sans-serif; }
+    header {
+      background: url('hero-img.jpg') center center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .services .card, .blog .card { transition: 0.3s; }
+    /*.services .card, .blog .card{background-color: #052c65}*/
+    .services .card:hover, .blog .card:hover { transform: translateY(-10px); }
+    footer { background: #0d6efd; color: white; padding: 20px 0; }
+    .progress { height: 8px; }
+.services i{
+  color:blue;
+  margin-bottom: 30px;
+}
+#services .card{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+#blog .card {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+#portfolio .card {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+#portfolio .card p{
+  text-align: left;
+}
+.port-h{
+  text-align: left;
+}
+#portfolio .card{
+
+}
