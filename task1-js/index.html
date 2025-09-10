@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> System</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<h1> System</h1>
+
+<input type="text" id="pName" placeholder="Product Name">
+<input type="number" id="pPrice" placeholder="Product Price">
+<input type="text" id="pCategory" placeholder="Product Category">
+<input type="text" id="pDesc" placeholder="Product Description">
+<button onclick="addOrUpdateProduct()">Add Product</button>
+
+<br><br>
+<input type="text" id="search" placeholder="Search Products..." onkeyup="searchProduct()">
+
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Name</th>
+<th>Price</th>
+<th>Category</th>
+<th>Description</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody id="productTable"></tbody>
+</table>
+
+<button class="clear" onclick="clearAllProducts()">Clear All Products</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

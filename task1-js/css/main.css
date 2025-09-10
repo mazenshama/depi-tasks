@@ -1,0 +1,36 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #222; color: #fff;
+  text-align: center;
+}
+input, button {
+  margin: 5px;
+  padding: 8px;
+}
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #333;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #555;
+}
+.delete {
+  color: red;
+  cursor: pointer;
+}
+.update {
+  color: yellow;
+  cursor: pointer;
+}
+.clear {
+  background: red;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
